@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0, #ffb3ba, #ffdfba, #e0c3fc, #9cf6ff);
+    margin: 0;
+    color: #333;
+}
+
+.todo-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #6a0dad;
+    text-shadow: 1px 1px 2px #b2b2b2;
+}
+.todo-input-container {
+    margin-top: 30px;
+}
+
+#todo-input, #priority-select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 70%;
+    font-size: 1em;
+}
+
+#add-btn, #clear-btn {
+    padding: 12px 20px;
+    border: none;
+    background: linear-gradient(to right, #ff8c00, #ffbf00);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+#add-btn:hover, #clear-btn:hover {
+    background: linear-gradient(to right, #ff6f00, #ffbf00);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+.low-priority {
+    border-left: 5px solid #6a0dad;
+}
+
+.medium-priority {
+    border-left: 5px solid #ffa07a;
+}
+
+.high-priority {
+    border-left: 5px solid #ff4500;
+}
+
+.remove-btn, .edit-btn {
+    background: linear-gradient(to right, #ff4b4b, #ff8a8a);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: background 0.3s ease;
+}
+
+.edit-btn {
+    background: linear-gradient(to right, #ffd700, #ffeb3b);
+}
+
+.remove-btn:hover, .edit-btn:hover {
+    background: linear-gradient(to right, #ff1a1a, #ff6161);
+}
+
+.clear-btn {
+    background: linear-gradient(to right, #008080, #20b2aa);
+}
